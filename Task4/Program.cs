@@ -1,11 +1,24 @@
 ﻿
 // макс из 3-ёх чисел
-int max (int a, int b, int c);
+int a,b,c;
 
+
+
+Console.WriteLine("Введите 1-ое чсило");
+a = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите 2-ое чсило");
+b = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите 3-ое чсило");
+c = Convert.ToInt32(Console.ReadLine());
+int z=a;
+Console.WriteLine();
 {
-if ( a > b) return a; else return b;
-if (a > c) return a; else return c;
-if (b > c) return b; esle return c;
+    if (b>z) z=b;
+    if (c>z) z=c;
+    
+    
 }
-Console.WriteLine(max(1,2,3));
+Console.WriteLine("Максимальное число" +z);
+
+
 
