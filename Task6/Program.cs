@@ -1,7 +1,13 @@
 ﻿// 6.Выяснить является ли число чётным
 int a; 
-string s=Console.ReadLine();
-a=Convert.ToInt32(s);
- if (a%2==0)
- return a;
- Console.WriteLine(a);
+Console.WriteLine ("Введите число");
+a = Convert.ToInt32(Console.ReadLine());
+
+if (a%2 == 0) // a%2 == 0 -(Пример, как проверить четное и нечетное число)
+Console.WriteLine ("Число, четное");
+else
+{
+    Console.WriteLine("Число, не четное ");
+}
+
+ 
