@@ -1,21 +1,34 @@
 ﻿// 35. Определить, присутствует ли в заданном массиве, некоторое число 
 
-int [] array = new int [20];
-int ThisNumbers;
+int [] array = new int [5];
 
-for (int index=0;index<array.Length;index++)
-{
-    array[index] = new Random().Next(1,99);
-    Console.WriteLine(array[index]);
 
-}
-Console.WriteLine("Введите Число");
-ThisNumbers = Convert.ToInt32(Console.ReadLine());
 for (int i = 0; i < array.Length; i++)
 {
-    if (array[i]  == ThisNumbers)
-    Console.WriteLine("В массиве присутсвует" +ThisNumbers);
-    else 
-    Console.WriteLine("Числа в массие нет");
+    array[i] = new Random().Next(1,10);
+    Console.WriteLine(array[i]);
 }
+
+int myNumber; 
+
+ myNumber = Convert.ToInt32 (Console.ReadLine());
+for (int index = 0; index < array.Length; index++)
+{
+ if ( array[index] == myNumber )
+ 
+
+Console.WriteLine("Присутствует данное число " +myNumber);
+
+else 
+Console.WriteLine("Отсутсвует");
+
+
+
+}
+
+
+
+
+
+
 
