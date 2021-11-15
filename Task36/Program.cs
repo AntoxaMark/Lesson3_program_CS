@@ -2,7 +2,8 @@
 
 int [] array = new int [8];
 int count = 0;
-int sum = 0;
+int count1 = 0;
+
 for (int i = 0; i < array.Length; i++)
 {
     array[i] = new Random().Next(100,1000);
@@ -13,11 +14,15 @@ for (int i = 0; i < array.Length; i++)
 for (int inp = 0; inp < array.Length; inp++)
 {
     if ((array[inp] % 2) == 0)
-{   count++;
+   count++;
     
-} 
+else 
+count1++;
+
 }
 Console.WriteLine(count);
+Console.WriteLine (count1);
+
 
 
 
