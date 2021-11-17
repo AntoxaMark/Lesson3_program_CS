@@ -4,22 +4,56 @@
 
 // 2 3 4 6
 
-int [] array = new int [26];
+int [] array = new int [27];
+
 
 for (int i = 0; i < array.Length; i++)
 {
     array[i] = new Random().Next(210,236);
-if (array[i] / 2 )
-if (array[i] / 3)
-if (array[i] / 4)
-if (array[i] / 6);
-Console.Write ( $" {array[i]} " );
+    if (array[i]%2==0 && array[i]%3==0 && array[i]%4==0 && array[i]%6==0)
+    
+    Console.WriteLine( array[i]);
+    
+    
+}
+Console.WriteLine();
+int [] arr = new int [91];
+
+
+for (int index = 0; index < arr.Length; index++)
+{
+    arr[index] = new Random().Next(210,300);
+    if (array[index]%2==0 && array[index]%3==0 && array[index]%4==0 && array[index]%6==0)
+    
+    Console.WriteLine( array[index]);
+    
+    
+    
 }
 
-int [] array1 = new int [91];
-for (int index = 0; index < array.Length; index++)
-{
-    array1[index] = new Random().Next(210,300);
-}
+    
+
+             
+
+
+
+
+
+
+
+
+// int n (int n)
+
+// {
+//     int k=0;
+//     for(int index = 2; index < n; index++)
+//     {
+//         if (n%index==0) k++;
+//         return k;
+//     }
+// }
+// Console.WriteLine(n(13));
+
+
 
 
